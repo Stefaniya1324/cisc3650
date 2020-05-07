@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+  <html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Notes: DashBoard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./profile.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  
+  </head>
+  <body>
+  <div class="container app">
+    <aside class="sidebar">
+      <h1 class="logo">
+        <img src="./img/logo1.JPG" alt="Notes" width="200" height="75" role="menuitem">
+      </h1>
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#">Brooklyn College</a></li>
+          <li class="active">
+            <a href="#">Spring 2020</a><br />
+            <a href="#" class="btn btn-primary">Upload New Notes</a>
+            <ul>
+              <li class="active"><a href="#">CISC 3650<span class="btn btn-primary">4</span></a></li>
+              <li><a href="#">CISC 3665</a></li>
+              <li><a href="#">CISC 3140</a></li>
+              <li><a href="#">CISC 3620</a></li>
+            </ul>
+            <ul class="labels" role="separator">
+              <li><a href="#">Fall 2019<span class="btn btn-primary label"></span></a></li>
+              <li><a href="#">Spring 2019<span class="btn btn-primary label"></span></a></li>
+              <li><a href="#">Fall 2018<span class="btn btn-primary label"></span></a></li>
+            </ul>
+          </li>
+          <li><a href="#">Archived Docs</a></li>
+          <li><a href="#">Statistics</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="header">
+        <form action="">
+          <input type="search" name="s" placeholder="Search for notes" />
+        </form>
+        <nav class="nav-settings">
+          <ul>   
+            <li>
+              <div class="dropdown-content" role="separator">mar-jac
+              <a href="#">Account</a> 
+              <a href="#">Settings</a>
+              <a href="#">Log Out</a>
+            </div>
+        </li>
+            <li><a href="#" class="icon icon-gear"></a></li>
+          </ul>
+        </nav>
+        <div class="clr"></div>
+      </header>
+
+      <div class="container" role=separator>
+        <div class="messages">
+          <h1>Notes Box<span class="icon icon-arrow-down"></span></h1>
+          <form action="">
+            <input type="search" class="search" placeholder="Search Inbox" />
+          </form>
+          <ul class="message-list">
+            <li class="new">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 10<small>Mar 15</small></h3>
+                <p><strong>Accessibility - </strong>To be access accessibility on webpages...</p>
+              </div>
+            </li>
+            <li class="active">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 9<small>Mar 15</small></h3>
+                <p>The ability to be able to display content...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 8<small>Mar 14</small>></h3>
+                <p><strong>Interface design - </strong>Let's talk about ...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 7<small>Mar 13</small></h3>
+                <p><strong>CSS Responsive - </strong>Adding CSS to websites can ...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 6<small>Mar 12</small></h3>
+                <p><strong>Storyboard Making - </strong>As expected for storyboards...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 5<small>Mar 12</small></h3>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 4<small>Mar 12</small></h3>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. - </strong>the foll...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 3<small>Mar 12</small></h3>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. - </strong></p>
+              </div>
+            </li>
+            <li class="new">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 2<small>Mar 12</small></h3>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. - </strong></p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 1<small>Jul 11</small></h3>
+                <p><strong>Intro to Computer-Human Interaction</strong>Hi ...</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <section class="message">
+          <h2><span class="icon icon-star-large"></span>The ability to be able to display content on a browser window<span class="icon icon-reply-large"></span><span class="icon icon-delete-large"></span></h2>
+          <div class="meta-data">
+            <p>
+              <img src="http://placehold.it/40x40" class="avatar" alt="" />
+              Prof. K to to <span class="user">3150</span>
+              <span class="date">March 15, 2020</span>
+            </p>
+          </div>
+          <div class="body">
+            <p>Hello class,</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam modi poss
+              imus dignissimos maxime ipsa unde voluptatum consectetur harum debitis dolorum quas q
+              uibusdam vero iusto ducimus blanditiis. Enim autem illo praesentium est quis ab voluptate sequi quia magnam deleniti vero
+               dicta iste. Harum velit asperiores expedita inventore error nulla eius nostrum voluptas aspernatur at quia eaque ipsa deserunt quas doloribus totam i
+               ncidunt mollitia iure! Libero laudantium nobis necessitatibus veniam autem molestias distinctio voluptas quos aliquam vitae. Consequuntur adipisci natus hic s
+               ed rerum dolore cumque numquam illum rem at quaerat reprehenderit iste quis maiores fuga voluptates delectus suscipit dicta nulla itaque placeat.</p>
+            <p>Cheers</p>
+          </div>
+          <div class="action">
+            <ul class="options">
+              <li><a href="#" class="active">Answering</a></li>
+              <li><a href="#">Forward</a></li>
+              <div class="clr"></div>
+            </ul>
+            <div class="textarea">
+              <textarea name="r">Hello class,
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit qui impedit magni fuga velit nobis quas fugit odio voluptas voluptates odit animi quos
+   nam dolorem harum molestiae culpa sint rem ad esse laboriosam vero quod molestias porro ea dolores eligendi!
+              </textarea>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yY96hTb8WgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="fileupload container">
+                <span class="fileinfo">Important Reading.pdf</span>
+                <div class="progress">
+                  <div class="bar">65%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">  
+            <ul class="footer__list">
+              <div class="footer__title">
+              On Social Media
+              <li><a class="footer__phone" href="#"><img src="img/fb.jpg" width=48px height=48px></a></li>
+              <li><a href="#"><img src="img/insta.jpg" width=48px height=48px></a></li>
+              <li><a class="footer__adress" href="#"><img src="img/twitter.png" width=48px height=48px></a></li>
+              <li><a class="footer__adress" href="#"><img src="img/you.png" width=48px height=48px></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </body>
+  </html>
+  

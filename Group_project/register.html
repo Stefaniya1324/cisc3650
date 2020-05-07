@@ -13,7 +13,7 @@
 
     
 </head>
-	<body>
+	<body onload="updateStatus()">
 
  		<header>
   			<div class="headerContent">
@@ -47,13 +47,13 @@
  		</header>
 		
 		<div class="sign_up">
-			<p id="output"></p>
+			
 			<img src="./img/sign_up.png" alt="sign_up icon" id="user_icon">
 			<h1> Create an Account</h1>
-				<form name="form_1">
+				<form name="form_1" onsubmit="submitForm()">
 					<label>
 						Name
-						<input type="text" id="input_box" placeholder="Enter Account's Name" required > 
+						<input type="text" id="NAME" class="input_box" placeholder="Enter Account's Name" onkeyup="checkName()" required > 
 					</label>
 
 					<br>
@@ -62,20 +62,21 @@
 						Email
 						
 					</label>
-					<input type="email" id="input_box" placeholder="Enter Your Email"  required>
+					<input type="email" id="EMAIL" class="input_box"  placeholder="Enter Your Email" onkeyup="ValidateEmail()" required>
 					
 					<br>
 
 					<label>
 						Password
-						<input type="password" id="input_box" class="pw" placeholder="Enter Your Password" required>
+						<input type="password" id="pw" class="input_box"  placeholder="Enter Your Password" required>
 					</label>
 
 					<br>
 					
 					<label>
 						Re-Type Password 
-						<input type="password" id="input_box" class="re_pw" placeholder="Confirm Your Password" required> 
+						<input type="password" id="re_pw" class="input_box" placeholder="Confirm Your Password"  onkeyup="CheckPW()" required> 
+
 					</label>
 
 					<br>
@@ -91,14 +92,14 @@
 				    </label>
 
 					<p>
-						<input type="checkbox" required>
+						<input type="checkbox" id="check" onclick="checkBox()" required>
 						I agree to the 
 						<a href="#term_condition">Terms of Use</a> 
  					   and 
  					   	<a href="#privacy_condition">Privacy Policy</a>
 					</p>
 
-					<button type="button" id="submit_button" onclick="request()">Sign Up</button>
+					<button type="submit" id="submit_button" disabled>Sign Up</button>
 				</form>
 		</div>
 

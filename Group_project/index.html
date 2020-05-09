@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body onload="updateStatus()">
   <header class="header">
     <div class="headerTop">
       <div class="container">
@@ -89,13 +89,13 @@
       <div class="footer__inner">
         <div class="footer__info">
           <div class="footer__title">
-            On Social Media
+            Follow Us On Social Media
           </div>
           <ul class="footer__list">
-            <li><a class="footer__phone" href="#"><img src="img/fc.jpg" width=48px height=48px></a></li>
-            <li><a href="#"><img src="img/insta.jpg" width=48px height=48px></a></li>
-            <li><a class="footer__adress" href="#"><img src="img/twitter.png" width=48px height=48px></a></li>
-            <li><a class="footer__adress" href="#"><img src="img/you.png" width=48px height=48px></a></li>
+            <li><a class="footer__phone" href="#"><img src="img/fc.jpg" alt="Facebook" width=48px height=48px></a></li>
+            <li><a href="#"><img src="img/insta.jpg" alt="Instagram" width=48px height=48px></a></li>
+            <li><a class="footer__adress" href="#"><img src="img/twitter.png" alt="Twitter" width=48px height=48px></a></li>
+            <li><a class="footer__adress" href="#"><img src="img/you.png" alt="YouTube" width=48px height=48px></a></li>
           </ul>
         </div>
       </div>
@@ -103,13 +103,13 @@
   </div>
 
 
-   <div id="modal">
+   <div id="modal" >
      <form action="register.html">
        <h2>Have an account?</h2>
-       <input type="text" placeholder="Email">
-       <input type="text" placeholder="Password">
-         <a href="dashboard-ui.html" class="btn btn-primary"><input type="button" value="Sign In"></a>
-       <input type="submit" value="Create account">
+       <input type="email" id="email_ID" placeholder="Email" >
+       <input type="password" id="pw_ID" placeholder="Password" >
+       <input type="button" id="go_Next" value="Sign In" onclick="GotoDashBoard()" disabled>
+       <input type="button" value="Create account">
      </form>
    </div>
 
@@ -118,6 +118,41 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
  <script src="js/jquery.fancybox.min.js"></script>
  <script src="js/ main.js "> </script>
+
+ <script>
+
+ 	function GotoDashBoard()
+ 	{
+ 		window.open("dashboard-ui.html");
+ 	}
+
+ 	function checkField()
+ 	{
+ 		var email = document.getElementById("email_ID");
+ 		var pw = document.getElementById("pw_ID");
+
+ 		var butt = document.getElementById("go_Next");
+
+ 		if(email.value != "" && pw.value !="")
+ 		{
+ 			butt.disabled = false;
+ 			butt.style.backgroundColor = "#fcfc62";
+ 			 
+ 		}
+ 		else
+ 		{	
+ 			butt.style.backgroundColor = "#808080";
+ 			butt.disabled = true;
+ 		}
+ 	}
+
+ 	function updateStatus()
+	{
+	 	setInterval(checkField, 1000);
+	}
+
+
+ </script>
 
 </body>
 

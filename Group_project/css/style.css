@@ -248,9 +248,10 @@ float:right;
   position: relative;
 }
 
+
 .footer__content{
   background-color: #303030;
-  padding: 20px 0px 20px;
+  padding: 10px 0px 20px;
 }
 .footer__inner{
   display: inline-block;
@@ -272,6 +273,8 @@ float:right;
 .footer__info{
 
   max-width: 360px;
+  text-align: center;
+
 }
 .footer__list{
   padding-top: 10px;
@@ -412,7 +415,7 @@ float:right;
 .button {
   padding-left: 70px;
   border-radius: 20px;
-  background-color: silver;
+  background-color: #1c8adb;
   border: none;
   color: black;
   padding: 15px 32px;
@@ -420,4 +423,6 @@ float:right;
   text-decoration: none;
   display: inline-flex;
   font-size: 16px;
+  margin-left: 1em;
+  margin-top: 0.2em;
 }

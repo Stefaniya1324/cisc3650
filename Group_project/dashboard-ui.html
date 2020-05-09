@@ -1,88 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title> Notes </title>
-      <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500,700&display=swap&subset=latin-ext" rel="stylesheet">
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/fonts.css">
-      <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </head>
-   <body>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Notes: DashBoard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./css/profile.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
-      <header class="header">
-         <div class="headerTop"></div>
-         <div class="headerContent">
+  </head>
+  <body style="display: block;">
+  <div class="container app">
+    <aside class="sidebar">
+      <h1 class="logo">
+        <img src="./img/logo1.JPG" alt="Notes" width="200" height="75" role="menuitem">
+      </h1>
+      <nav class="main-nav" role="navigation">
+        <ul>
+          <li><a href="#">Brooklyn College</a></li>
+          <li class="active">
+            <a href="#">Spring 2020</a><br />
+            <a href="upload.html" class="btn btn-primary">Upload New Notes</a>
+            <ul>
+              <li class="active"><a href="#">CISC 3650<span class="btn btn-primary">4</span></a></li>
+              <li><a href="#">CISC 3665</a></li>
+              <li><a href="#">CISC 3140</a></li>
+              <li><a href="#">CISC 3620</a></li>
+            </ul>
+            <ul class="labels" role="separator">
+              <li><a href="#">Fall 2019<span class="btn btn-primary label"></span></a></li>
+              <li><a href="#">Spring 2019<span class="btn btn-primary label"></span></a></li>
+              <li><a href="#">Fall 2018<span class="btn btn-primary label"></span></a></li>
+            </ul>
+          </li>
+          <li><a href="#">Archived Docs</a></li>
+          <li><a href="#">Statistics</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="main">
+
+    <header class="header">
+       <form action="">
+          <input type="search" id="search_box" name="s" placeholder="Search for notes"/>
+        </form>
+        <nav class="nav-settings">
+          <ul>   
+            <li>
+              <div class="dropdown-content" role="separator">Julia Persona
+              <a href="#">Account</a> 
+              <a href="#">Settings</a>
+              <a href="index.html">Log Out</a>
+
+              </div>
+
+            </li>
+            <li><a href="#" class="icon icon-gear"></a></li>
+          </ul>
+        </nav>
+        <div class="clr"></div>
+   </header>
+
+      <div class="container" role=separator>
+        <div class="messages">
+          <h1>Notes Box<span class="icon icon-arrow-down"></span></h1>
+          <form action="">
+            <input type="search" class="search" placeholder="Search Inbox" />
+          </form>
+          <ul class="message-list">
+            <li class="new">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 10<small>Mar 15</small></h3>
+                <p><strong>Accessibility - </strong>To be access accessibility on webpages...</p>
+              </div>
+            </li>
+            <li class="active">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 9<small>Mar 15</small></h3>
+                <p>The ability to be able to display content...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 8<small>Mar 14</small>></h3>
+                <p><strong>Interface design - </strong>Let's talk about ...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 7<small>Mar 13</small></h3>
+                <p><strong>CSS Responsive - </strong>Adding CSS to websites can ...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 6<small>Mar 12</small></h3>
+                <p><strong>Storyboard Making - </strong>As expected for storyboards...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 5<small>Mar 12</small></h3>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 4<small>Mar 12</small></h3>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. - </strong>the foll...</p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 3<small>Mar 12</small></h3>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. - </strong></p>
+              </div>
+            </li>
+            <li class="new">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 2<small>Mar 12</small></h3>
+                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. - </strong></p>
+              </div>
+            </li>
+            <li class="">
+              <input type="checkbox" />
+              <div class="preview">
+                <h3>CISC 3150: Chapter 1<small>Jul 11</small></h3>
+                <p><strong>Intro to Computer-Human Interaction</strong>Hi ...</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <section class="message">
+          <h2><span class="icon icon-star-large"></span>The ability to be able to display content on a browser window<span class="icon icon-reply-large"></span><span class="icon icon-delete-large"></span></h2>
+          <div class="meta-data">
+            <p>
+              <img src="http://placehold.it/40x40" class="avatar" alt="" />
+              Prof. K to to <span class="user">3150</span>
+              <span class="date">March 15, 2020</span>
+            </p>
+          </div>
+          <div class="body">
+            <p>Hello class,</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam modi poss
+              imus dignissimos maxime ipsa unde voluptatum consectetur harum debitis dolorum quas q
+              uibusdam vero iusto ducimus blanditiis. Enim autem illo praesentium est quis ab voluptate sequi quia magnam deleniti vero
+               dicta iste. Harum velit asperiores expedita inventore error nulla eius nostrum voluptas aspernatur at quia eaque ipsa deserunt quas doloribus totam i
+               ncidunt mollitia iure! Libero laudantium nobis necessitatibus veniam autem molestias distinctio voluptas quos aliquam vitae. Consequuntur adipisci natus hic s
+               ed rerum dolore cumque numquam illum rem at quaerat reprehenderit iste quis maiores fuga voluptates delectus suscipit dicta nulla itaque placeat.</p>
+            <p>Cheers</p>
+          </div>
+
+          <div class="action">
+            <ul class="options">
+              <li><a href="#" class="active">Answering</a></li>
+              <li><a href="#">Forward</a></li>
+              <div class="clr"></div>
+            </ul>
+            <div class="textarea">
+              <textarea name="r">Hello class,
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit qui impedit magni fuga velit nobis quas fugit odio voluptas voluptates odit animi quos
+   nam dolorem harum molestiae culpa sint rem ad esse laboriosam vero quod molestias porro ea dolores eligendi!
+              </textarea>
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yY96hTb8WgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="fileupload container">
+                <span class="fileinfo">Important Reading.pdf</span>
+                <div class="progress">
+                  <div class="bar">65%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+            
+      </div>
+    </div>
+  </div>
+
+      <footer class="footer" >
+         <div class="footer__content">
             <div class="container">
-               <div class="headerContentInner">
-                  <div class="logo"><a href="#"> <img src="img/logo.JPG" alt="logo" width=170 height=100></a></div>
-                  <div class="profileInfo">
-                     <ul class="profileInfo">
-                        <li>ASHLEY PERSONA</li>
-                        <li>Student</li>
-                        <li>persona1993@gmail.com</li>
-                        <li><a href="index.html" title="Sign out of Profile">Log Out</a></li>
-                     </ul>
-                  </div>
-                  <div>
-                     <img src="student 1.jpg" alt="Profile photo" width = "70" height="70" style="padding-right: 0;"> 
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
+        <div class="footer__inner">
+          <div class="footer__info">  
 
-      <div id="container3" style="background: url(uploadbackground.jpg)">
-         <div id=main3>
-      <h1 style="text-align: center;"> CISC 3650</h1>
-      <div style="margin-top: 50px; align-self:auto">
-         <a href="dashboard-ui.html" class="button">Back</a>
-      </div>
-      <form id="dropFileForm" action="" method="post" onsubmit="uploadFiles(event)">
-         <input type="file" name="files[]" id="fileInput" multiple onchange="addFiles(event)">
-         <label for="fileInput" id="fileLabel" ondragover="overrideDefault(event);fileHover();" ondragenter="overrideDefault(event);fileHover();" ondragleave="overrideDefault(event);fileHoverEnd();" ondrop="overrideDefault(event);fileHoverEnd();
-            addFiles(event);">
-         <i class="fa fa-download fa-5x"></i>
-         <br>
-         <span id="fileLabelText">
-         Choose a file or drag it here
-         </span>
-         <br>
-         <span id="uploadStatus"></span>
-         </label>
-         <input type="submit" value="Upload" style="display:none" class="uploadButton">
-      </form>
-      <div class="textarea">
-         <textarea placeholder="Or Enter Notes Manually" cols="100" rows="7"></textarea>
-      </div>
-      <div class="textarea" style="padding-bottom: 70px;">
-         <input type="submit">
-      </div>
+            <ul class="footer__list">
+                Follow Us On Social Media
+               <li><a class="footer__phone" href="#"><img src="img/fc.jpg" alt="Facebook" width=48px height=48px></a></li>
+               <li><a href="#"><img src="img/insta.jpg" alt="Instagram" width=48px height=48px></a></li>
+               <li><a class="footer__adress" href="#"><img src="img/twitter.png" alt="Twitter" width=48px height=48px></a></li>
+             <li><a class="footer__adress" href="#"><img src="img/you.png" alt="YouTube" width=48px height=48px></a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
 
-         </div>
-      </div>
-
-      <footer class="footer" style="padding-bottom: 0;">
-      <div class="footer__content">
-         <div class="container">
-            <div class="footer__inner">
-               <div class="footer__info">
-                  <div class="footer__title">
-                     On Social Media
-                  </div>
-                  <ul class="footer__list">
-                     <li><a class="footer__phone" href="#"><img src="img/fc.jpg" alt="facebook icon" width=48px height=48px></a></li>
-                     <li><a href="#"><img src="img/insta.jpg" alt=" instagram icon" width=48px height=48px></a></li>
-                     <li><a class="footer__adress" href="#"><img src="img/twitter.png" alt= "twitter icon" width=48px height=48px></a></li>
-                     <li><a class="footer__adress" href="#"><img src="img/you.png" alt= "youtube icon" width=48px height=48px></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </body>
-</html>
+        </div>
+   
+  </body>
+  </html>

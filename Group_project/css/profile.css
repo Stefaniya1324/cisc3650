@@ -388,17 +388,18 @@ form #search_box {
 }
 
 .social-buttons {
-  position: absolute;
+  position: static;
   right: 835px;
   bottom: 15px;
 }
 
 .column a>img {
-  margin: auto;
-  margin-top: 200px;
-  margin-left: 10px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-right: -25em;
+  margin-left: 28em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  
+  
 }
 
 .stretch {
